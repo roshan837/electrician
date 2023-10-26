@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electrician</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Electrician Allocation System</h1>
+
+    <div class="container">
+      <div class="column">
+        <h2>Electricians:</h2>
+        <ul id="electricians-list"></ul>
+      </div>
+
+      <div class="column">
+        <h2>Sites:</h2>
+        <ul id="sites-list"></ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="column">
+        <h2>Change Installation Date:</h2>
+        <label for="site-select">Select Site:</label>
+        <select id="site-select"></select
+        ><br />
+        <label for="new-date">New Installation Date:</label>
+        <input type="date" id="new-date" /><br />
+        <button id="change-date-button">Change Date</button>
+      </div>
+
+      <div class="column">
+        <h2>Auto-Assign Electricians:</h2>
+        <button id="assign-button">Auto Assign</button>
+      </div>
+    </div>
+
+    <h2>Assignment Output:</h2>
+    <ul id="assignment-output"></ul>
+    <script src="app.js"></script>
+  </body>
+</html>
